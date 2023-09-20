@@ -4,7 +4,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
-  padding: 5rem;
+  padding: 1rem 5rem;
 }
 .grid .item {
   background-size: cover;
@@ -42,10 +42,13 @@
 }
 
 nav {
-  background-color: linear-gradient(#6f8d8d, #e5f3f3);
+  background-color: rgba(94, 82, 65, 0.427);
 }
 nav ul {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
   list-style: none;
   gap: 1rem;
 }
@@ -55,11 +58,12 @@ nav a {
   padding: 1rem 2rem;
   display: inline-block;
 }
-nav a:hover {
-  background-color: burlywood;
+nav a a:hover {
+  background-color: aliceblue;
+  transition: all 0.2s ease-in;
 }
 
-* {
+*, *::after, *::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
