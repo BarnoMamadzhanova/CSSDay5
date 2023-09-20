@@ -30,4 +30,44 @@ body {
     background-image: linear-gradient(rgba(160, 150, 109, 0.5), rgba(241, 240, 222, 0.5)), url(https://cdn.pixabay.com/photo/2016/06/20/13/44/paper-1468883_1280.jpg);
 }
 
+@media screen and (min-width: 320px)  and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2,1fr);
+        gap: 1%;
+        padding: 1%;
+       
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    nav {
+        position: fixed;
+        width: 100%;
+        margin-bottom: 0;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+
+    body {
+        margin-top: 25%;
+    }
+
+    .headings {
+        font-size: 150%;
+    }
+
+}
 

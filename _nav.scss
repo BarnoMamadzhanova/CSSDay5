@@ -1,6 +1,7 @@
 @use 'var' as *;
 @use 'grid' as *;
 
+
 nav {
     position: fixed;
     width: 100%;
@@ -29,8 +30,8 @@ nav {
 
         &:hover{
             background-color: rgb(165, 146, 105);
-            transform: scale(1.1);
-            transition: all 0.2s ease-in-out;
+            // transform: scale(1.1);
+            // transition: all 0.2s ease-in-out;
             font-size: 150%;
         }
     }
