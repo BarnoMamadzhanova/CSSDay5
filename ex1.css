@@ -1,11 +1,5 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .grid {
-  height: 100vh;
+  height: 200vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -45,4 +39,33 @@
 
 .bigrow {
   grid-row: span 2;
+}
+
+nav {
+  background-color: linear-gradient(#6f8d8d, #e5f3f3);
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: darkslategray;
+  padding: 1rem 2rem;
+  display: inline-block;
+}
+nav a:hover {
+  background-color: burlywood;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2016/06/20/13/44/paper-1468883_1280.jpg);
+  background-image: linear-gradient(rgba(160, 150, 109, 0.5), rgba(241, 240, 222, 0.5)), url(https://cdn.pixabay.com/photo/2016/06/20/13/44/paper-1468883_1280.jpg);
 }/*# sourceMappingURL=ex1.css.map */

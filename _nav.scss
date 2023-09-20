@@ -1,0 +1,22 @@
+@use 'var' as *;
+
+nav {
+    background-color: $nav-color1;
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: darkslategray;
+        padding: 1rem 2rem;
+        display: inline-block;
+
+        &:hover{
+            background-color: burlywood;
+        }
+    }
+}
