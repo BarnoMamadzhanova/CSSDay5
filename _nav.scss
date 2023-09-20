@@ -2,7 +2,8 @@
 @use 'grid' as *;
 
 nav {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 1 ;
     margin-bottom: 5vh;

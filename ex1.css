@@ -96,7 +96,8 @@
 }
 
 nav {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1;
   margin-bottom: 5vh;
@@ -156,6 +157,7 @@ footer {
 }
 
 body {
+  margin-top: 15vh;
   background-image: url(https://cdn.pixabay.com/photo/2016/06/20/13/44/paper-1468883_1280.jpg);
   background-image: linear-gradient(rgba(160, 150, 109, 0.5), rgba(241, 240, 222, 0.5)), url(https://cdn.pixabay.com/photo/2016/06/20/13/44/paper-1468883_1280.jpg);
 }/*# sourceMappingURL=ex1.css.map */
