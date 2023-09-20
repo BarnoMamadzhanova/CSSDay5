@@ -1,5 +1,8 @@
 @use 'grid' as *;
-@use 'nav';
+@use 'nav' as *;
+@use 'var' as *;
+@use 'foot' as *;
+
 
 *, *::after, *::before {
     padding: 0;
@@ -8,16 +11,22 @@
 }
 
 .headings {
-    text-align: left;
-    padding-left: 10rem;
-    font-size: 150%;
+    text-align: center;
+    font-size: 200%;
     font-weight: bolder;
     color: $font-color;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all 0.2s ease-in-out;
+        font-size: 220%;
+        background-color: $main-color;
+    }
 }
 
 body {
     background-image: url(https://cdn.pixabay.com/photo/2016/06/20/13/44/paper-1468883_1280.jpg);
-    background-image: linear-gradient( rgba(160, 150, 109, 0.5),  rgba(241, 240, 222, 0.5)), url(https://cdn.pixabay.com/photo/2016/06/20/13/44/paper-1468883_1280.jpg);
+    background-image: linear-gradient(rgba(160, 150, 109, 0.5), rgba(241, 240, 222, 0.5)), url(https://cdn.pixabay.com/photo/2016/06/20/13/44/paper-1468883_1280.jpg);
 }
 
 

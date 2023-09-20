@@ -1,7 +1,13 @@
-@use 'var';
+@use 'var' as *;
+@use 'grid' as *;
 
 nav {
-    background-color: $nav-color;
+    position: sticky;
+    top: 0;
+    z-index: 1 ;
+    margin-bottom: 5vh;
+    background-color: $nav-color1;
+
 
     ul {
         display: flex;
@@ -15,15 +21,16 @@ nav {
     a {
         text-decoration: none;
         color: $a-color;
-        padding: 1rem 2rem;
+        padding: 2rem 2rem;
         display: inline-block;
-        font-size: 120%;
+        font-size: 140%;
         font-weight: bolder;
 
-        a:hover{
-            background-color: aliceblue;
-            transform: scale(1.2);
-            transition: all 0.2s ease-in;
+        &:hover{
+            background-color: rgb(165, 146, 105);
+            transform: scale(1.1);
+            transition: all 0.2s ease-in-out;
+            font-size: 150%;
         }
     }
 }
