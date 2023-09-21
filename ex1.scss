@@ -1,8 +1,7 @@
 @use 'grid' as *;
 @use 'nav' as *;
-@use 'var' as *;
 @use 'foot' as *;
-
+@use 'var' as *;
 
 *, *::after, *::before {
     padding: 0;
@@ -33,8 +32,10 @@ body {
 @media screen and (min-width: 320px)  and (max-width: 768px) {
     .grid {
         grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
         gap: 1%;
         padding: 1%;
+        height: $grid-height * 2;
        
         .item {
             display: flex;
@@ -71,3 +72,8 @@ body {
 
 }
 
+@media screen and (max-width: 320px) {
+    .grid{
+        padding:1rem 2%;
+    }
+}

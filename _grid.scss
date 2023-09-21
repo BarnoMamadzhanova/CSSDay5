@@ -1,7 +1,7 @@
-
+@use 'var' as *;
 
 .grid {
-    height: 200vh;
+    height: $grid-height;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(3,1fr);
